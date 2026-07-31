@@ -16,6 +16,11 @@ import Terms from './pages/legal/Terms';
 import Privacy from './pages/legal/Privacy';
 import Shipping from './pages/legal/Shipping';
 
+// Pages dynamiques pour les marques et collections
+import BrandPage from './pages/BrandPage';
+import CollectionPage from './pages/CollectionPage';
+import SearchPage from './pages/SearchPage';
+
 function App() {
   return (
     <CartProvider>
@@ -27,9 +32,13 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/:categorySlug" element={<Products />} />
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/categories" element={<Categories />} />
               <Route path="/categories/:id" element={<CategoryDetail />} />
+              <Route path="/brand/:brandId" element={<BrandPage />} />
+              <Route path="/collection/:collectionId" element={<CollectionPage />} />
+              <Route path="/search" element={<SearchPage />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />

@@ -2,7 +2,7 @@
 # Dependencies
 node_modules/
 
-# Build artifacts
+# Build outputs
 dist/
 build/
 target/
@@ -17,7 +17,6 @@ target/
 .idea/
 *.swp
 *.swo
-*.tmp
 
 # Logs
 *.log
@@ -28,38 +27,53 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-*.so
-
-# Coverage reports
-coverage/
-htmlcov/
+venv/
+.venv/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
 .coverage
+htmlcov/
+.coverage.*
+.nox/
+.tox/
 
-# OS generated files
+# Node.js specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+jspm_packages/
+*.tsbuildinfo
+.nyc_output
+coverage/
+.nyc_output/
+istanbul/
+.mocha-grunt
+.mocha
+.grunt
+.bower-cache
+.bower-registry
+.bower-tmp
+.tamper
+.tamper-config
+.sass-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# General
 .DS_Store
 Thumbs.db
-
-# Compression files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+iTunes_Control/
+.apdisk
 ```
