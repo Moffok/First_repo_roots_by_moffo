@@ -6,6 +6,15 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ProductDetail from './pages/products/ProductDetail';
+import Categories from './pages/categories/Categories';
+import CategoryDetail from './pages/categories/CategoryDetail';
+import Profile from './pages/account/Profile';
+import Login from './pages/account/Login';
+import Register from './pages/account/Register';
+import Terms from './pages/legal/Terms';
+import Privacy from './pages/legal/Privacy';
+import Shipping from './pages/legal/Shipping';
 
 function App() {
   return (
@@ -18,6 +27,15 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/product/:id" element={<ProductDetail />} />
+              <Route path="/categories" element={<Categories />} />
+              <Route path="/categories/:id" element={<CategoryDetail />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/shipping" element={<Shipping />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
@@ -33,17 +51,26 @@ function App() {
                 <ul>
                   <li><a href="/">Accueil</a></li>
                   <li><a href="/products">Produits</a></li>
+                  <li><a href="/categories">Catégories</a></li>
                   <li><a href="/about">À propos</a></li>
                   <li><a href="/contact">Contact</a></li>
                 </ul>
               </div>
               <div className="footer-section">
-                <h4>Service client</h4>
+                <h4>Compte</h4>
                 <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Livraison</a></li>
-                  <li><a href="#">Retours</a></li>
-                  <li><a href="#">Tailles</a></li>
+                  <li><a href="/login">Connexion</a></li>
+                  <li><a href="/register">Inscription</a></li>
+                  <li><a href="/profile">Mon compte</a></li>
+                  <li><a href="/shipping">Livraison</a></li>
+                </ul>
+              </div>
+              <div className="footer-section">
+                <h4>Légal</h4>
+                <ul>
+                  <li><a href="/terms">Conditions d'utilisation</a></li>
+                  <li><a href="/privacy">Politique de confidentialité</a></li>
+                  <li><a href="/shipping">Politique de livraison</a></li>
                 </ul>
               </div>
               <div className="footer-section">
