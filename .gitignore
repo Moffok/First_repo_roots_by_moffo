@@ -10,11 +10,16 @@ target/
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
-# IDE specific
+# IDE files
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Logs
+*.log
 
 # Python specific
 __pycache__/
@@ -24,70 +29,51 @@ __pycache__/
 .Python
 venv/
 .venv/
-.env
-
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-coverage/
-htmlcov/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
 .coverage
+htmlcov/
+.coverage.*
+.nox/
+.tox/
 
-# Temporary files
-*.tmp
-*.swp
-*.swo
-
-# Package managers
+# Node.js specific
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Compiled assets
-*.min.js
-*.min.css
-
-# Local configuration
-*.local
-
-# Cache directories
-.cache/
-.mypy_cache/
-.pytest_cache/
-.nyc_output/
+node_modules/
+jspm_packages/
+*.tsbuildinfo
+.nyc_output
 coverage/
+.nyc_output/
+istanbul/
+.mocha-grunt
+.mocha
+.grunt
+.bower-cache
+.bower-registry
+.bower-tmp
+.tamper
+.tamper-config
+.sass-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
-# Distribution / packaging
-*.tar.gz
-*.whl
-*.egg
-*.egg-info/
-
-# Testing
-.junit/
-.rspec_cache/
-
-# Vim
-*.un~
-Session.vim
-
-# Emacs
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-
-# Gradle
-.gradle/
-
-# Rust
-/target/
-
-# Go
-vendor/
+# General
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+iTunes_Control/
+.apdisk
 ```
